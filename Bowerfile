@@ -1,2 +1,15 @@
+# angular asset
+# make sure to require the following in application.js:
+# //= require angular/angular
 asset 'angular'
+
+# angular router
+# make sure to require the following in application.js:
+# //= require angular-route/angular-route
+asset 'angular-route'
+
+# bootstrap asset
+# make sure to require the following in application.css.scss
+# @import "bootstrap-sass-official/assets/stylesheets/bootstrap-sprockets";
+# @import "bootstrap-sass-official/assets/stylesheets/bootstrap";
 asset 'bootstrap-sass-official'

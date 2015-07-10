@@ -38,6 +38,12 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Foreman is a manager for Procfile-based applications. Its aim is to abstract away the details of the Procfile format, and allow you to either run your application directly or export it to some other process management format.
 gem "foreman"
 
+# Pre-cache view templates so that Angular an access them
+# make sure to insert the following in application.js
+# //= require angular-rails-templates
+gem 'angular-rails-templates'
+gem 'sprockets', '2.12.3'
+
 group :development, :test do
   gem 'sqlite3'
 

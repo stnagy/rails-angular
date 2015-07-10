@@ -1,3 +1,6 @@
+Steps taken from:
+http://angular-rails.com
+
 1. Make sure turbolinks gem is removed (it is not compatible with Angular.js)
 
 2. Add the proper testing suite:
