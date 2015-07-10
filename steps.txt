@@ -45,4 +45,4 @@
  -- create angular app in app/assets/javascripts/app.js
  -- create index.html with html in app/views/home/index.html
 
-10. Require angular in application.js and remove turbolinks
+11. Require angular in application.js and remove turbolinks
