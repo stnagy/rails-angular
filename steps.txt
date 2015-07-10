@@ -29,3 +29,20 @@
 6. Add assets needed to Bowerfile
 
 7. rake bower:install
+
+8. Add bower assets to asset pipeline by adding 'vendor/assets/bower_components' to 'config/application.rb'
+  config.assets.paths << Rails.root.join("vendor","assets","bower_components")
+  config.assets.paths << Rails.root.join("vendor","assets","bower_components","bootstrap-sass-official","assets","fonts")
+  config.assets.precompile << %r(.*.(?:eot|svg|ttf|woff)$)
+  
+9. (Optional) Rename application.css to application.css.scss for bootstrap
+
+10. Create Tiny Angular App
+
+ -- create route to page in config/routes.rb
+     root to: 'home#index'
+ -- create home_controller.rb with index action
+ -- create angular app in app/assets/javascripts/app.js
+ -- create index.html with html in app/views/home/index.html
+
+10. Require angular in application.js and remove turbolinks
