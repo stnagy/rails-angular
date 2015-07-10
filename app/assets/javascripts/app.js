@@ -26,10 +26,8 @@
 		  },
 		];
 
-
-
     // creating the router
-    angular.module('testApp').config(function($routeProvider){
+    angular.module('testApp').config(['$routeProvider', function($routeProvider){
 
     	// Routes provided below
     	$routeProvider
@@ -44,7 +42,7 @@
     		})
     		.otherwise({ redirectTo: '/404' });
 
-    });
+    }]);
 
     // creating the controller
     angular.module('testApp').controller('RecipesController', ['$scope', '$routeParams', '$location', 
