@@ -3,7 +3,8 @@
     // creating the testApp module
     angular.module('testApp', [
     	'templates', // templates added by 'angular-rails-templates' gem
-  		'ngRoute'
+  		'ngRoute',
+  		'ngResource' // provides interaction for RESTful services (such as APIs) via $resource service
   		]);
 
     // dummy data
@@ -45,8 +46,8 @@
     }]);
 
     // creating the controller
-    angular.module('testApp').controller('RecipesController', ['$scope', '$routeParams', '$location', 
-    	function( $scope, $routeParams, $location ) {
+    angular.module('testApp').controller('RecipesController', ['$scope', '$routeParams', '$location', '$resource'
+    	function( $scope, $routeParams, $location, $resource ) {
     	
     	$scope.search = function(keywords){
     		$location.path('/').search('keywords', keywords);

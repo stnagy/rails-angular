@@ -8,5 +8,6 @@ feature "Looking up recipes", js: true do
 
     expect(page).to have_content("Baked Potato")
     expect(page).to have_content("Baked Brussel Sprouts")
+    expect(page).to_not have_content("Potatoes au Gratin")
   end
 end

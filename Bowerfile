@@ -13,3 +13,6 @@ asset 'angular-route'
 # @import "bootstrap-sass-official/assets/stylesheets/bootstrap-sprockets";
 # @import "bootstrap-sass-official/assets/stylesheets/bootstrap";
 asset 'bootstrap-sass-official'
+
+asset 'angular-resource'
+asset 'angular-mocks'
